@@ -1,0 +1,42 @@
+.form{
+   display:  inline-grid;
+ padding: 15px;
+   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 1px 3px rgba(0, 0, 0, 0.12);
+   border-radius: 0px 0px 4px 4px;
+}
+
+.input{
+    margin-bottom: 10px;
+}
+.button{
+
+    padding: 5px;
+    margin: 20px;
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+   
+    border-radius: 4px;
+    border: transparent;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #276749;
+    background-color: #C6F6D5;
+    cursor: pointer;
+   
+}
+button:active {
+  color: #C6F6D5;
+    background-color: #276749;
+  }
+  
+  .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
