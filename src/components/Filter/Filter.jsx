@@ -22,7 +22,7 @@ return(
     placeholder='Filter'
     _placeholder={{ color: 'inherit' }}
   />
-    <input type="text" value={filter}  onChange={changeFilter} />
+
 
     </>
 )

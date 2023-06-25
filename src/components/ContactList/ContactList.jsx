@@ -16,8 +16,8 @@ return(
     {visibleContact.length > 0 &&
        (
          <ul className={styles.list}>
-        {visibleContact.map(({id, name, phone}) => (<li key={id} className={styles.item}>
-       {name}:<span>{phone}</span> 
+        {visibleContact.map(({id, name, number}) => (<li key={id} className={styles.item}>
+       {name}:<span>{number}</span> 
        <Button   border='2px'
   borderColor='#276749'   color='#276749' variant='outline'  type="submit"onClick={()=> dispatch(deleteContact(id))} className={styles.button}>Delete
   </Button>

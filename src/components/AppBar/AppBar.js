@@ -1,8 +1,10 @@
 
 import { UserMenu } from '../UserMenu/UserMenu';
 import { AuthNav } from '../AuthNav/AuthNav';
-import { Navigation } from 'components/Navigation/Navigetion';
+import { Navigation } from 'components/Navigation/Navigation';
 import { useAuth } from 'components/Hooks/useAuth';
+import { TabList, Tabs } from '@chakra-ui/react';
+
 
 
 export const AppBar = () => {
@@ -10,10 +12,15 @@ export const AppBar = () => {
 
   return (
     < >
+         <Tabs variant='soft-rounded' colorScheme='green'>
+  <TabList>
     
            <Navigation />
       {isLoggedIn ? 
-        <UserMenu /> : <AuthNav />}
+        <UserMenu /> : <AuthNav/>}
+         </TabList>
+</Tabs>
+    
     </>
   );
 };

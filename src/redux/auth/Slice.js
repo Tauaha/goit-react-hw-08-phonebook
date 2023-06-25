@@ -8,11 +8,7 @@ const initialState = {
   isLoggedIn: false,
   isRefreshing: false,
 };
-// const registerFulfilled =(state, action) =>{
-//     state.user = action.payload.user;
-//     state.token = action.payload.token;
-//     state.isLoggedIn = true;
-//   }
+
 const authSlice = createSlice({
   name: 'auth',
   initialState,

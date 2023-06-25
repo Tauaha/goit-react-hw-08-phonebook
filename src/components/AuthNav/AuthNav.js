@@ -1,21 +1,27 @@
 
-import { Tab, TabList,Tabs } from '@chakra-ui/react';
+import { Tab } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 
-
+const styles ={
+  container: {
+    display: 'contents'
+  }
+}
 export const AuthNav = () => {
   return (
-    <div>
-            <Tabs variant='soft-rounded' colorScheme='green'>
-  <TabList>
-    <Tab>  <NavLink  to="/register">
+    <div style={styles.container}>
+        
+    <Tab> 
+       <NavLink  to="/register">
         Register
-      </NavLink></Tab>
-    <Tab>   <NavLink  to="/login">
+      </NavLink>
+      </Tab>
+    <Tab>  
+       <NavLink  to="/login">
         Log In
-      </NavLink></Tab>
-  </TabList>
-</Tabs>
+      </NavLink>
+      </Tab>
+
     
    
     </div>
